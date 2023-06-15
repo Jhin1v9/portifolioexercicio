@@ -1,0 +1,171 @@
+body{
+	margin: 0;
+	font-family: arial, Helvetica;
+
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+
+}
+
+header .logo{
+	color: white;
+	font-size: 23px;
+	font-weight: bold;
+
+}
+
+header .menu{
+	width:30px;
+	height: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	
+}
+
+header .menu-line{
+	height: 3px;
+	background-color: #333;
+}
+
+
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	height: 100vh;
+
+}
+
+.container .leftside{
+	display: flex;
+	flex: 1;
+	background-color:#3B576D ;
+	align-items: center;
+	padding:0px 20px;
+}
+
+.container .rightside{
+	flex: 1;
+	background-color: #FFF;
+	background-image: url('../images/hero.jpg');
+	background-size: cover;
+	background-position:center top;
+}
+.buttons{
+	
+
+}
+.container .buttons a{
+	display: inline-block;
+	background-color: white;
+	text-decoration: none;
+	color: #3B576D;
+	font-size: 16px;
+	padding: 20px 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px #111;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.container .info .buttons a.light{
+	background-color: #3B576D;
+	color: white;
+	
+
+}
+.container .buttons a:hover{
+	opacity: 0.8;
+}
+.container .info{
+	color: white;
+
+}
+
+.container .profession{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+
+}
+
+.container .name{
+	font-weight: bold;
+	font-size: 80px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+
+.container .buttons{
+
+}
+footer{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	color: white;
+	font-size: 13px;
+}
+
+footer a{
+	color: white;
+}
+
+
+@media (max-width:850px){
+	header{
+		position: initial;
+		background-color: #3b576D;
+	}
+	.container{
+		flex-direction: column;
+
+	}
+
+	.container .leftside{
+		padding: 30px 20px;
+		justify-content: center;
+		text-align: center;
+		flex: none;
+	}
+	header .menu-line{
+		background-color: white;
+	}
+	footer{
+		position: initial;
+		color: #333;
+		font-size: 16px;
+	}
+	footer a {
+		color: #333;
+		margin-left: 3px;
+	}
+}
+
+@media (max-width:450px){
+	.container .leftside .info .name{
+		font-size: 50px;
+
+
+	}
+	.container .leftside .info .buttons a{
+		display: block;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+}
